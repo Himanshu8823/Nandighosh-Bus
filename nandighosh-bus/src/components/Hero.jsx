@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useMemo } from 'react';
+import Logo from '../assets/images/nandighoshbus_logo.jpeg';
 
 const Hero = () => {
   // Memoize static content
@@ -17,7 +18,7 @@ const Hero = () => {
   };
 
   return (
-    <section 
+    <section
       id="home"
       className="relative h-screen flex items-center justify-center"
     >
@@ -26,9 +27,9 @@ const Hero = () => {
         <img
           src="nandighosh-bus.avif?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
           alt={heroContent.imageAlt}
-          loading="eager" 
+          loading="eager"
           decoding="async"
-          className="w-full h-full object-cover object-center" 
+          className="w-full h-full object-cover object-center"
           width="1920"
           height="1080"
           srcSet="
@@ -37,7 +38,7 @@ const Hero = () => {
             nandighosh-bus.avif?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80 1920w
           "
           sizes="100vw"
-        />        
+        />
         <div className="absolute inset-0 bg-black/40" />
       </div>
 
@@ -51,14 +52,19 @@ const Hero = () => {
         >
           <motion.div
             variants={variants}
-            className="w-20 h-20 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-3xl mx-auto mb-6"
+            className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-2 border-orange-500"
           >
-            NB
+            <img
+              src={Logo}
+              alt="Nandighosh Bus Logo"
+              className="w-full h-full object-cover"
+              loading="eager"
+            />
           </motion.div>
 
           <motion.h1
             variants={variants}
-            className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight" 
+            className="text-4xl md:text-6xl font-bold text-white mb-4 leading-tight"
           >
             {heroContent.title}
           </motion.h1>

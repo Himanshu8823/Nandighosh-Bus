@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import logo from '../assets/images/nandighoshbus_logo.jpeg'; // Adjust the path as necessary
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -56,17 +57,16 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <motion.div 
+            <motion.div 
             whileHover={{ scale: 1.05 }}
             className="flex items-center"
           >
-            <a href="#home" className="flex items-center" onClick={() => handleLinkClick('#home')}>
-              <div className="w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold">
-                NB
-              </div>
-              <span className="ml-3 text-xl font-bold text-gray-800">
-                Nandighosh Bus
-              </span>
+            <a href="" className="flex items-center" onClick={() => handleLinkClick('#home')}>
+              <img 
+                src={logo} 
+                alt="Nandighosh Bus Logo" 
+                className="h-8 w-8 rounded-full object-cover border-2 border-orange-500" 
+              />
             </a>
           </motion.div>
 
