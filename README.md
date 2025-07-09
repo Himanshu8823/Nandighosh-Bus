@@ -29,7 +29,6 @@ A modern, responsive landing page for Nandighosh Bus services built with React a
 ## 4) Contact Section
 ![Contact Section Preview](https://github.com/user-attachments/assets/21d67d4f-579e-4640-9f9d-624bfb811791)
 
-- **Multiple Contact Options**: Includes WhatsApp CTA and contact form
 - **Mobile-App Ready**: Placeholder for future app integration
 - **Clean Layout**: Well-spaced elements for better usability
 
