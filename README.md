@@ -10,9 +10,10 @@ A modern, responsive landing page for Nandighosh Bus services built with React a
 ## Key Features
 
 - 🚌 **Complete Responsive Design** - Works on mobile, tablet & desktop
-- ⚡ **Optimized Performance** - LightHouse Score : For Desktop - 98 | For Mobile - 91
-![Mobile](https://github.com/user-attachments/assets/5847949b-e15c-40d4-acc9-af68c917f382)- 📱 **Mobile-First** Approach : 
+- ⚡ **Optimized Performance** - LightHouse Score : For Desktop - 98 | For Mobile - 90
 ![Desktop](https://github.com/user-attachments/assets/da0f624a-6ae6-45ec-a6e0-1e785a247d99)= 📱 **Desktop** Approach 
+![Mobile](https://github.com/user-attachments/assets/5847949b-e15c-40d4-acc9-af68c917f382)- 📱 **Mobile-First** Approach : 
+
 
 
 ## Technologies Used
