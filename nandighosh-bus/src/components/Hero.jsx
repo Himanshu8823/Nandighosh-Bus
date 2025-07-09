@@ -52,7 +52,7 @@ const Hero = () => {
         >
           <motion.div
             variants={variants}
-            className="w-24 h-24 rounded-full flex items-center justify-center mx-auto mb-6 overflow-hidden border-2 border-orange-500"
+            className="w-24 h-24 rounded-lg flex items-center justify-center mx-auto mb-6 overflow-hidden border-2 border-orange-500"
           >
             <img
               src={Logo}
