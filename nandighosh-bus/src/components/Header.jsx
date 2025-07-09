@@ -57,16 +57,14 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-            <motion.div 
+          <motion.div 
             whileHover={{ scale: 1.05 }}
             className="flex items-center"
           >
-            <a href="" className="flex items-center" onClick={() => handleLinkClick('#home')}>
-              <img 
-                src={logo} 
-                alt="Nandighosh Bus Logo" 
-                className="h-8 w-8 rounded-full object-cover border-2 border-orange-500" 
-              />
+            <a href="#home" className="flex items-center" onClick={() => handleLinkClick('#home')}>              
+              <span className="ml-3 text-xl font-bold text-gray-800">
+                Nandighosh Bus
+              </span>
             </a>
           </motion.div>
 
