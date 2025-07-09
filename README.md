@@ -55,41 +55,7 @@ A modern, responsive landing page for Nandighosh Bus services built with React a
 
 ## Project Structure
 
-nandighosh-bus/
-├── public/
-│   ├── favicon.ico
-│   └── images/
-│       ├── bus-hero.jpg
-│       ├── nandighosh-logo.png
-│       └── pattern.svg
-│
-├── src/
-│   ├── assets/
-│   │   ├── images/
-│   │        ├── BalasoreToBerhampur.jpg
-│   │        ├── BalasoreToJamshedpur.jpg
-│   │        ├── BalasoreToSambalpur.jpg
-│   │        ├── nandighoshbus_logo.jpeg
-│   │
-│   │
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Hero.jsx
-│   │   ├── Routes.jsx
-│   │   ├── Features.jsx
-│   │   ├── Contact.jsx
-│   │   └── Footer.jsx
-│   │
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│   
-├── tailwind.config.js
-├── postcss.config.js
-├── index.html
-├── vite.config.js
-└── package.json
+![Project Structure](https://github.com/user-attachments/assets/a621a4b6-6ffe-4a89-8d2e-4b2f18b7f27b)
 
 
 
