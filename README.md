@@ -5,12 +5,16 @@
 
 A modern, responsive landing page for Nandighosh Bus services built with React and Tailwind CSS.
 
+**1) Hero Section :**
 ![Hero Section Preview](https://github.com/user-attachments/assets/79485ab5-ee5c-48c4-a2a5-1504678ae1e0)
 
+**2) Routes Section :**
 ![Routes Section Preview](https://github.com/user-attachments/assets/7f38bbf3-1720-4f4f-954e-33cd7de8b5ea)
 
+**3) Features Section**
 ![Features Section Preview](https://github.com/user-attachments/assets/410e2be3-88dd-4bbb-a964-97886c5a9277)
 
+**4) Contact Section**
 ![Contact Section Preview](https://github.com/user-attachments/assets/21d67d4f-579e-4640-9f9d-624bfb811791)
 
 
