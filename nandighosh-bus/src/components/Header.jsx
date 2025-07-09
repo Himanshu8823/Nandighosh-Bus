@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import logo from '../assets/images/nandighoshbus_logo.jpeg'; // Adjust the path as necessary
 
 const navLinks = [
   { name: 'Home', href: '#home' },
@@ -25,7 +24,7 @@ useEffect(() => {
     sections.forEach(section => {
       const sectionTop = section.offsetTop;
       const sectionHeight = section.clientHeight;
-      const scrollPosition = window.scrollY + 100; // Adjust this value as needed
+      const scrollPosition = window.scrollY + 100; 
       
       if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
         setActiveLink(`#${section.id}`);
@@ -54,7 +53,7 @@ const handleLinkClick = (href) => {
   if (element) {
     // Wait for scroll to complete before updating activeLink
     element.scrollIntoView({ behavior: 'smooth' });
-    setTimeout(() => setActiveLink(href), 1000); // Match scroll duration
+    setTimeout(() => setActiveLink(href), 1000); 
   }
 };
 

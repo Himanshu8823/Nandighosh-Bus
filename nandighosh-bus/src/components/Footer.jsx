@@ -125,7 +125,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright - sticks to bottom */}
+        {/* Copyright */}
         <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-500 text-xs">
           <p>© {new Date().getFullYear()} Nandighosh Bus. All rights reserved.</p>
         </div>

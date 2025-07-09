@@ -120,9 +120,7 @@ const Features = () => {
                 
                 {/* Content */}
                 <h3 className="text-xl font-bold text-center text-gray-900 mb-3">{feature.title}</h3>
-                <p className="text-gray-600 text-center">{feature.description}</p>
-                
-                {/* Hover effect */}
+                <p className="text-gray-600 text-center">{feature.description}</p>                                
                 <div className="absolute inset-0 border-2 border-transparent group-hover:border-orange-300 rounded-xl pointer-events-none transition-all duration-300"></div>
               </div>
             </motion.div>

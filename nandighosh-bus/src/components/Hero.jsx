@@ -22,7 +22,7 @@ const Hero = () => {
       id="home"
       className="relative h-screen flex items-center justify-center"
     >
-      {/* Optimized Background Image */}
+      {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
           src="nandighosh-bus.avif?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80"
