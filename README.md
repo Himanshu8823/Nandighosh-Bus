@@ -7,6 +7,13 @@ A modern, responsive landing page for Nandighosh Bus services built with React a
 
 ![Hero Section Preview](https://github.com/user-attachments/assets/79485ab5-ee5c-48c4-a2a5-1504678ae1e0)
 
+![Routes Section Preview](https://github.com/user-attachments/assets/7f38bbf3-1720-4f4f-954e-33cd7de8b5ea)
+
+![Features Section Preview](https://github.com/user-attachments/assets/410e2be3-88dd-4bbb-a964-97886c5a9277)
+
+![Contact Section Preview](https://github.com/user-attachments/assets/21d67d4f-579e-4640-9f9d-624bfb811791)
+
+
 ## Key Features
 
 - 🚌 **Complete Responsive Design** - Works on mobile, tablet & desktop
@@ -20,7 +27,7 @@ A modern, responsive landing page for Nandighosh Bus services built with React a
 
 | Category        | Technologies                          |
 |-----------------|---------------------------------------|
-| Framework       | React 18                              |
+| Framework       | React 19.1                            |
 | Styling         | Tailwind CSS 3                        |
 | Animations      | Framer Motion                         |
 | Icons           | Heroicons                             |
@@ -43,3 +50,42 @@ A modern, responsive landing page for Nandighosh Bus services built with React a
    - Tree-shaken Tailwind config
 
 ## Project Structure
+
+nandighosh-bus/
+├── public/
+│   ├── favicon.ico
+│   └── images/
+│       ├── bus-hero.jpg
+│       ├── nandighosh-logo.png
+│       └── pattern.svg
+│
+├── src/
+│   ├── assets/
+│   │   ├── images/
+│   │        ├── BalasoreToBerhampur.jpg
+│   │        ├── BalasoreToJamshedpur.jpg
+│   │        ├── BalasoreToSambalpur.jpg
+│   │        ├── nandighoshbus_logo.jpeg
+│   │
+│   │
+│   ├── components/
+│   │   ├── Header.jsx
+│   │   ├── Hero.jsx
+│   │   ├── Routes.jsx
+│   │   ├── Features.jsx
+│   │   ├── Contact.jsx
+│   │   └── Footer.jsx
+│   │
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│   
+├── tailwind.config.js
+├── postcss.config.js
+├── index.html
+├── vite.config.js
+└── package.json
+
+
+
