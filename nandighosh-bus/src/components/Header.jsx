@@ -15,35 +15,48 @@ const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [activeLink, setActiveLink] = useState('#home');
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-      
-      // Update active link based on scroll position
-      const sections = document.querySelectorAll('section');
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
-        if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
-          setActiveLink(`#${section.id}`);
-        }
-      });
-    };
+useEffect(() => {
+  const handleScroll = () => {
+    setScrolled(window.scrollY > 10);
     
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  const handleLinkClick = (href) => {
-    setActiveLink(href);
-    setIsOpen(false);
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+    const sections = document.querySelectorAll('section');
+    let foundActive = false;
+    
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      const scrollPosition = window.scrollY + 100; // Adjust this value as needed
+      
+      if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+        setActiveLink(`#${section.id}`);
+        foundActive = true;
+      }
+    });
+    
+    // If no section found in view and we're at top of page
+    if (!foundActive && window.scrollY === 0) {
+      setActiveLink('#home');
     }
   };
+
+  // Set initial active link immediately
+  setActiveLink('#home');
+  
+  window.addEventListener('scroll', handleScroll);
+  return () => window.removeEventListener('scroll', handleScroll);
+}, []);
+
+const toggleMenu = () => setIsOpen(!isOpen);
+
+const handleLinkClick = (href) => {
+  setIsOpen(false);
+  const element = document.querySelector(href);
+  if (element) {
+    // Wait for scroll to complete before updating activeLink
+    element.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => setActiveLink(href), 1000); // Match scroll duration
+  }
+};
 
   return (
     <motion.header
@@ -57,7 +70,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <motion.div 
+           <motion.div 
             whileHover={{ scale: 1.05 }}
             className="flex items-center"
           >
@@ -140,7 +153,7 @@ const Header = () => {
                     className={`block px-3 py-2 text-lg font-medium ${
                       activeLink === link.href
                         ? 'text-orange-500'
-                        : 'text-gray-700 hover:text-orange-400'
+                        : 'text-gray-700 '
                     }`}
                   >
                     {link.name}
