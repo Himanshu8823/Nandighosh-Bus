@@ -1,6 +1,6 @@
 # Nandighosh Bus - Landing Page
 
-[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)]([https://nandighosh-bus.vercel.app](https://nandighosh-bus-eight.vercel.app/)) 
+[![Live Demo](https://img.shields.io/badge/demo-live-brightgreen)](https://nandighosh-bus-eight.vercel.app/)
 [![GitHub](https://img.shields.io/badge/source-code-blue)](https://github.com/yourusername/nandighosh-bus)
 
 A modern, responsive landing page for Nandighosh Bus services built with React and Tailwind CSS.
